@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dock51.ttf">
+            <string>Dock51</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MAPD724_W2020_Midterm_Template" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail Pilot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5n-19-1SP">
+                                <rect key="frame" x="241" y="169" width="375" height="76"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="72"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 99999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqD-hz-OK4">
+                                <rect key="frame" x="571" y="57" width="185" height="32"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="30"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFt-Ic-biy" userLabel="StartButton">
+                                <rect key="frame" x="393" y="292" width="146" height="50"/>
+                                <state key="normal" title="Button" image="startButton"/>
+                                <connections>
+                                    <action selector="StartButton_Press:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Rlp-nO-Ain"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miD-IV-WLD">
+                                <rect key="frame" x="134" y="57" width="120" height="32"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="30"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1F-mX-dGX" userLabel="BackButton">
+                                <rect key="frame" x="353" y="343" width="151" height="50"/>
+                                <state key="normal" title="Button" image="backButton"/>
+                                <connections>
+                                    <action selector="BackButton_Press:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ZLR-uh-prf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Q5n-19-1SP" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="197" id="96A-wO-aMe"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="N1F-mX-dGX" secondAttribute="trailing" constant="310" id="9L6-tc-DIN"/>
+                            <constraint firstItem="miD-IV-WLD" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="90" id="MmZ-Fh-lAa"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="Q5n-19-1SP" secondAttribute="trailing" constant="236" id="ODo-xs-gBb"/>
+                            <constraint firstItem="vqD-hz-OK4" firstAttribute="centerX" secondItem="IFt-Ic-biy" secondAttribute="centerX" constant="197.5" id="Sac-gh-wNK"/>
+                            <constraint firstItem="IFt-Ic-biy" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="349" id="Y8Z-pB-0Gf"/>
+                            <constraint firstItem="N1F-mX-dGX" firstAttribute="bottom" secondItem="4qk-I5-YsI" secondAttribute="bottom" id="a78-vW-h43"/>
+                            <constraint firstItem="vqD-hz-OK4" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="57" id="egP-Z8-kpL"/>
+                            <constraint firstItem="vqD-hz-OK4" firstAttribute="baseline" secondItem="miD-IV-WLD" secondAttribute="baseline" id="hUn-nL-6Xo"/>
+                            <constraint firstItem="Q5n-19-1SP" firstAttribute="top" secondItem="vqD-hz-OK4" secondAttribute="bottom" constant="80" id="iDV-if-4sM"/>
+                            <constraint firstItem="N1F-mX-dGX" firstAttribute="top" secondItem="IFt-Ic-biy" secondAttribute="bottom" constant="1" id="m1F-YN-KUT"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="vqD-hz-OK4" secondAttribute="trailing" constant="96" id="s2T-px-QHe"/>
+                            <constraint firstItem="vqD-hz-OK4" firstAttribute="centerX" secondItem="N1F-mX-dGX" secondAttribute="centerX" constant="197" id="w1x-At-d3m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                    </view>
+                    <connections>
+                        <outlet property="BackButtonOutlet" destination="N1F-mX-dGX" id="XFG-Nj-Qov"/>
+                        <outlet property="LivesLabel" destination="miD-IV-WLD" id="JBG-qb-AmF"/>
+                        <outlet property="ScoreLabel" destination="vqD-hz-OK4" id="ZLM-f4-sLk"/>
+                        <outlet property="StartButtonOutlet" destination="IFt-Ic-biy" id="meJ-lb-UBj"/>
+                        <outlet property="StartLabel" destination="Q5n-19-1SP" id="1FM-Q4-DvX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="69.565217391304358"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButton" width="150" height="50"/>
+        <image name="startButton" width="150" height="50"/>
+    </resources>
+</document>
